@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2985f5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D9391C</color>
+
+    <!-- FaceGraphic colors -->
+    <color name="eyeWhite">#FFFACD</color>
+    <color name="eyelid">#B0E0E6</color>
+    <color name="iris">#8B4513</color>
+    <color name="eyeOutline">#000000</color>
+    <color name="overlayHint">#7FFF00</color>
+    <color name="redtomat">#FF6347</color>
+    <color name="redlight">#D9391C</color>
+    <color name="red">#D9391C</color>
+    <color name="reddeep">#8C1500</color>
+    <color name="blue">#2985f5</color>
+    <color name="black">#555555</color>
+    <color name="blackdark">#333333</color>
+    <color name="blacklight">#888888</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#fcfcff</color>
+</resources>

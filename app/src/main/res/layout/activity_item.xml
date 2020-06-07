@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ItemActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+      >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/red"
+                    android:id="@+id/back"
+                    android:orientation="horizontal"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="top|center"
+                    android:gravity="top|center"
+                    android:layout_width="match_parent"
+                    >
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/appbar"
+                    android:layout_height="170dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/svg1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/redlight"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:duplicateParentState="true"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <include layout="@layout/pricecartlheader"  />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:gravity="top" >
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="When you have the right of ingredients, there's no need to customise:)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+            <Button
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/addtocart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttonborderlogin"
+                android:text="Add to Cart"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

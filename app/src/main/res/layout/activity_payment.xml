@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:andorid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFFFF"
+        >
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Payment Option"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <ProgressBar
+                android:visibility="gone"
+
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleSmall"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/progress_circular"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/alertarea"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:textColor="@color/redlight"
+                    android:gravity="center"
+                    android:text="Alert!!! "
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+
+                    android:id="@+id/alert"
+                    android:textStyle="bold"
+                    android:textColor="@color/redlight"
+                    android:paddingLeft="3dp"
+                    android:gravity="left"
+                    android:text="Incorrect  password"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:id="@+id/cod"
+                    android:gravity="center"
+                    android:background="@drawable/buttonborderlogin"
+                    android:text="Cash On Delivery "
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    >
+
+                </Button>
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:id="@+id/payonline"
+                    android:gravity="center"
+                    android:background="@drawable/buttonborderlogin"
+                    android:text="Pay Online"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/payonlinecontainer"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="left"
+                    android:text="Name (Written on card)"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:background="@drawable/buttonborder"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    style="@style/EditText.Login"
+                    android:paddingLeft="10dp"
+
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Name (as per card)" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="left"
+                    android:text="Expiry Date"
+                    android:textSize="13dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/buttonborder"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+                    style="@style/EditText.Login"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/month"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Month" />
+
+                <EditText
+android:layout_marginLeft="10dp"
+                    style="@style/EditText.Login"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Year" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="left"
+                    android:text="CVV Number"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/buttonborder"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    style="@style/EditText.Login"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:hint="CVV (3 digit number on backside of card)" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="left"
+                    android:text="Card Number "
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/buttonborder"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    style="@style/EditText.Login"
+                    android:paddingLeft="10dp"
+
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/cardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Card Number(16/18 digit)" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="left"
+                    android:text="Amount"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/buttonborder"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:inputType="textMultiLine"
+                    android:minEms="100"
+                    android:scrollbars="vertical|horizontal"
+                    style="@style/EditText.Login"
+                    android:padding="13dp"
+
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="$ 500" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:id="@+id/submit"
+                    android:gravity="center"
+                    android:background="@drawable/buttonborderlogin"
+                    android:text="Pay "
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
